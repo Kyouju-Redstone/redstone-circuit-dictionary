@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- [Font] Noto Sans Japanese -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- [Font] Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@374&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <title>Redstone Circuit Dictionary - JSON作成</title>
+</head>
+
+<body>
+    <!-- ナビゲーションバー -->
+    <div class="fixed-top shadow">
+        <nav class="font-ubuntu-medium navbar px-3 navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">RCD</a>
+            <a class="navbar-brand" href="https://github.com/Kyouju-Redstone/redstone-circuit-dictionary"
+                target="_blank" rel="noopener noreferrer">
+                <img src="./image/github-mark-white.svg" width="30" height="30" alt="">
+            </a>
+        </nav>
+    </div>
+
+    <div class="body-contents container">
+        <div class="row">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-8">
+                <h2 class="text-center pb-5">Disctionary JSON作成</h2>
+                <form>
+                    <div class="mb-3">
+                        <label class="h5 form-label">用語</label>
+                        <input id="input-word" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="h5 form-label">かな</label>
+                        <input id="input-kana" class="form-control">
+                        <div class="form-text">
+                            ※日本語の場合はひらがな、英語の場合は全て小文字で入力
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="h5 form-label">説明</label>
+                        <textarea id="input-description" class="form-control"></textarea>
+                    </div>
+                </form>
+
+                <div class="m-5"></div>
+
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                        <pre class="code-block"><code>{
+    "word": "<span id="json-word"></span>",
+    "kana": "<span id="json-kana"></span>",
+    "description": "<span id="json-description"></span>"
+}
+</code></pre>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+
+            </div>
+
+            <div class="col-xl-2"></div>
+        </div>
+
+    </div>
+    <script src="./js/create_dictionary_json.js"></script>
+</body>
+
+</html>
