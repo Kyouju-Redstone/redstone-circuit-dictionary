@@ -1,0 +1,35 @@
+{
+    "dictionary": [
+        {
+            "word": "Hipster Door",
+            "kana": "hipster door",
+            "description": "ドア部分・開閉用回路が全て地面に埋め込んであるドア",
+            "video": [
+                "https://youtu.be/T34QXYYUDuE?si=eb4wI6pH_ftnDyKr"
+            ]
+        },
+        {
+            "word": "Flush Door",
+            "kana": "flush door",
+            "description": "ドア部分が壁と一体になっているドア",
+            "video": [
+                "https://youtu.be/AXsIvgKxUt4?si=j-UzFI4OU16dxEJG"
+            ]
+        },
+        {
+            "word": "BUD",
+            "kana": "bud",
+            "description": "Block Update Detectorの略。"
+        },
+        {
+            "word": "Block Update Detector",
+            "kana": "block update detector",
+            "description": "ブロックアップデートを検知する回路"
+        },
+        {
+            "word": "Update Suppressor",
+            "kana": "update suppressor",
+            "description": "ブロックアップデートを止める機構"
+        }
+    ]
+}
