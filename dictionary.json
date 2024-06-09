@@ -4,7 +4,7 @@
             "word": "Hipster Door",
             "kana": "hipster door",
             "description": "ドア部分・開閉用回路が全て地面に埋め込んであるドア",
-            "video": [
+            "videos": [
                 "https://youtu.be/T34QXYYUDuE?si=eb4wI6pH_ftnDyKr"
             ]
         },
@@ -12,7 +12,7 @@
             "word": "Flush Door",
             "kana": "flush door",
             "description": "ドア部分が壁と一体になっているドア",
-            "video": [
+            "videos": [
                 "https://youtu.be/AXsIvgKxUt4?si=j-UzFI4OU16dxEJG"
             ]
         },
