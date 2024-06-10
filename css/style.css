@@ -50,3 +50,7 @@
     background-color: var(--color-primary);
     border-color: var(--color-primary);
 }
+
+::placeholder, .form-control::placeholder {
+    color: #bebebe;
+}

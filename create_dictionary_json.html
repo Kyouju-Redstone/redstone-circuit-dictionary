@@ -47,11 +47,11 @@
                 <form>
                     <div class="mb-3">
                         <label class="required-label h5 form-label">用語</label>
-                        <input id="input-word" class="form-control" required>
+                        <input id="input-word" class="form-control" placeholder="例: Update Suppressor" required>
                     </div>
                     <div class="mb-3">
                         <label class="required-label h5 form-label">かな</label>
-                        <input id="input-kana" class="form-control">
+                        <input id="input-kana" class="form-control" placeholder="例: update suppressor">
                         <div class="form-text">
                             ※日本語の場合はひらがな、英語の場合は全て小文字で入力
                         </div>
@@ -96,7 +96,7 @@
 
                     <div class="mb-3">
                         <label class="h5 form-label">YouTube URL 1</label>
-                        <input id="input-video-1" class="form-control" required>
+                        <input id="input-video-1" class="form-control" placeholder="例: https://youtu.be/1rVrYoh7BR8?si=vXpK1wb5W0e3R0zD" required>
                         <div class="form-text">
                             ※YouTubeの「共有」からコピーできるURLを貼ってください。
                         </div>
@@ -104,6 +104,9 @@
                     <div class="mb-3">
                         <label class="h5 form-label">YouTube URL 2</label>
                         <input id="input-video-2" class="form-control" required>
+                        <div class="form-text">
+                            ※「YouTube URL 1」に入力がないと反映されません。
+                        </div>
                     </div>
                 </form>
 
