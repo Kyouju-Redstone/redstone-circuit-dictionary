@@ -46,33 +46,74 @@
                 <h2 class="text-center pb-5">Disctionary JSON作成</h2>
                 <form>
                     <div class="mb-3">
-                        <label class="h5 form-label">用語</label>
+                        <label class="required-label h5 form-label">用語</label>
                         <input id="input-word" class="form-control" required>
                     </div>
                     <div class="mb-3">
-                        <label class="h5 form-label">かな</label>
+                        <label class="required-label h5 form-label">かな</label>
                         <input id="input-kana" class="form-control">
                         <div class="form-text">
                             ※日本語の場合はひらがな、英語の場合は全て小文字で入力
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="h5 form-label">説明</label>
+                        <label class="required-label h5 form-label">説明</label>
                         <textarea id="input-description" class="form-control"></textarea>
+                    </div>
+
+                    <!-- カテゴリー -->
+                    <div class="mb-3">
+                        <label class="required-label h5 form-label">カテゴリー</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="input-check-je" value="je">
+                            <label class="form-check-label" for="input-check-je"> Java Edition</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="input-check-be" value="be">
+                            <label class="form-check-label" for="input-check-be"> Bedrock Edition</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="input-check-piston" value="piston">
+                            <label class="form-check-label" for="input-check-piston"> ピストンドア系</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="input-check-logic" value="logic">
+                            <label class="form-check-label" for="input-check-logic"> 論理回路系</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="input-check-military" value="military">
+                            <label class="form-check-label" for="input-check-military"> 軍事系</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="input-check-trap" value="trap">
+                            <label class="form-check-label" for="input-check-trap"> トラップ系</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="input-check-other" value="other">
+                            <label class="form-check-label" for="input-check-other"> その他</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="h5 form-label">YouTube URL 1</label>
+                        <input id="input-video-1" class="form-control" required>
+                        <div class="form-text">
+                            ※YouTubeの「共有」からコピーできるURLを貼ってください。
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="h5 form-label">YouTube URL 2</label>
+                        <input id="input-video-2" class="form-control" required>
                     </div>
                 </form>
 
                 <div class="m-5"></div>
 
+                <!-- JSON -->
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
-                        <pre class="code-block"><code>{
-    "word": "<span id="json-word"></span>",
-    "kana": "<span id="json-kana"></span>",
-    "description": "<span id="json-description"></span>"
-}
-</code></pre>
+                        <pre id="generated-json" class="code-block"></pre>
                     </div>
                     <div class="col-lg-2"></div>
                 </div>

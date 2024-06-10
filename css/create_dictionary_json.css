@@ -4,3 +4,13 @@
     padding: 10px;
     border-radius: 10px;
 }
+
+.required-label:after {
+    content: "必須";
+    margin-left: 10px;
+    padding: 1px 5px;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(255, 64, 64);
+    border-radius: 5px;
+}
