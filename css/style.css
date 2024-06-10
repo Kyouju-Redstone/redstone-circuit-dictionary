@@ -29,9 +29,29 @@
 /* Elemetns */
 .body-contents {
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .title {
     padding-top: 20px;
     padding-bottom: 40px;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+    border-color: #dee2e6;
+}
+
+.form-check-input:checked:focus {
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+::placeholder,
+.form-control::placeholder {
+    color: #bebebe;
 }
