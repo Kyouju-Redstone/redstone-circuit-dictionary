@@ -51,6 +51,7 @@
     border-color: var(--color-primary);
 }
 
-::placeholder, .form-control::placeholder {
+::placeholder,
+.form-control::placeholder {
     color: #bebebe;
 }

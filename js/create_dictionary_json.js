@@ -150,3 +150,8 @@ function setCategoryJson(category, isChecked) {
         json.categories = json.categories.filter((e) => e != category);
     }
 }
+
+function copyJsonToClipboard() {
+    navigator.clipboard.writeText(codeElement.textContent);
+    alert("コピーしました。");
+}
