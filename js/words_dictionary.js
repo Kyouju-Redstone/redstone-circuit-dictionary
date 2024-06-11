@@ -1,3 +1,15 @@
+// カテゴリー
+let categoriesEnum = Object.freeze({
+    "je": "Java Edition",
+    "be": "Bedrock Edition",
+    "piston": "ピストンドア",
+    "logic": "論理回路",
+    "military": "軍事",
+    "trap": "トラップ",
+    "other": "その他",
+
+});
+
 main();
 
 async function main() {
@@ -40,6 +52,22 @@ async function main() {
             wordElement.id = e.word.replaceAll(" ", "-");
             wordElement.innerHTML = e.word;
 
+            // カテゴリーをセット
+            let categoriesElement = document.createElement("div");
+            categoriesElement.classList.add("categories");
+            for (let cateogry of e.categories) {
+                let categoryElement = document.createElement("span");
+                categoryElement.classList.add("category", "category-" + cateogry);
+                categoryElement.innerHTML = categoriesEnum[cateogry];
+                categoriesElement.appendChild(categoryElement);
+            }
+
+            // ColumnElement
+            let wordTitleColumnElement = document.createElement("div");
+            wordTitleColumnElement.classList.add("word-title-column");
+            wordTitleColumnElement.appendChild(wordElement);
+            wordTitleColumnElement.appendChild(categoriesElement);
+
             // アイコンをセット
             let iconElement = document.createElement("span");
             iconElement.classList.add("open-icon", "dli-plus");
@@ -50,7 +78,7 @@ async function main() {
             // アコーディオンタイトル部分にセット
             let wordTitleElement = document.createElement("div");
             wordTitleElement.classList.add("word-title");
-            wordTitleElement.appendChild(wordElement);
+            wordTitleElement.appendChild(wordTitleColumnElement);
             wordTitleElement.appendChild(iconWrapElement);
 
             /****************************************************/

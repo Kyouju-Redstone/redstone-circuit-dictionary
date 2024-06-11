@@ -4,6 +4,7 @@
             "word": "Hipster Door",
             "kana": "hipster door",
             "description": "ドア部分・開閉用回路が全て地面に埋め込んであるドア",
+            "categories": ["piston"],
             "videos": [
                 "https://youtu.be/T34QXYYUDuE?si=eb4wI6pH_ftnDyKr"
             ]
@@ -12,6 +13,7 @@
             "word": "Flush Door",
             "kana": "flush door",
             "description": "ドア部分が壁と一体になっているドア",
+            "categories": ["piston"],
             "videos": [
                 "https://youtu.be/AXsIvgKxUt4?si=j-UzFI4OU16dxEJG"
             ]
@@ -19,17 +21,28 @@
         {
             "word": "BUD",
             "kana": "bud",
-            "description": "Block Update Detectorの略。"
+            "description": "Block Update Detectorの略。",
+            "categories": ["je"]
         },
         {
             "word": "Block Update Detector",
             "kana": "block update detector",
-            "description": "ブロックアップデートを検知する回路"
+            "description": "ブロックアップデートを検知する回路",
+            "categories": ["je", "be"]
         },
         {
             "word": "Update Suppressor",
             "kana": "update suppressor",
-            "description": "ブロックアップデートを止める機構"
+            "description": "ブロックアップデートを止める機構",
+            "categories": ["je"]
+        },
+        {
+            "word": "Carry Cancel Adder",
+            "kana": "carry cancel adder",
+            "description": "2進数で加算したときに繰り上がりの遅延がない加算器",
+            "categories": [
+                "logic"
+            ]
         }
     ]
 }
