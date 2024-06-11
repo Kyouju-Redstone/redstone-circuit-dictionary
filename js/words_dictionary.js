@@ -104,10 +104,10 @@ async function main() {
 
 async function fetchJsonDictionary() {
     return new Promise((resolve, reject) => {
-        const dictionaryPath = "./dictionary.json";
+        const dictionaryPath = "./json/dictionary.json";
 
         // JSONファイルを読み込む
-        fetch("./dictionary.json")
+        fetch(dictionaryPath)
             .then(response => response.json())
             .then(data => resolve(data))
             .catch(error => reject(error));

@@ -45,20 +45,25 @@
             <div class="col-xl-8">
                 <h2 class="text-center pb-5">Disctionary JSON作成</h2>
                 <form>
+                    <!-- 用語 -->
                     <div class="mb-3">
                         <label class="required-label h5 form-label">用語</label>
                         <input id="input-word" class="form-control" placeholder="例: Update Suppressor" required>
                     </div>
+
+                    <!-- かな -->
                     <div class="mb-3">
                         <label class="required-label h5 form-label">かな</label>
-                        <input id="input-kana" class="form-control" placeholder="例: update suppressor">
+                        <input id="input-kana" class="form-control" placeholder="例: update suppressor" required>
                         <div class="form-text">
                             ※日本語の場合はひらがな、英語の場合は全て小文字で入力
                         </div>
                     </div>
+
+                    <!-- 説明 -->
                     <div class="mb-3">
                         <label class="required-label h5 form-label">説明</label>
-                        <textarea id="input-description" class="form-control"></textarea>
+                        <textarea id="input-description" class="form-control" required></textarea>
                     </div>
 
                     <!-- カテゴリー -->
@@ -96,7 +101,8 @@
 
                     <div class="mb-3">
                         <label class="h5 form-label">YouTube URL 1</label>
-                        <input id="input-video-1" class="form-control" placeholder="例: https://youtu.be/1rVrYoh7BR8?si=vXpK1wb5W0e3R0zD" required>
+                        <input id="input-video-1" class="form-control"
+                            placeholder="例: https://youtu.be/1rVrYoh7BR8?si=vXpK1wb5W0e3R0zD" required>
                         <div class="form-text">
                             ※YouTubeの「共有」からコピーできるURLを貼ってください。
                         </div>
@@ -108,25 +114,21 @@
                             ※「YouTube URL 1」に入力がないと反映されません。
                         </div>
                     </div>
-                </form>
+                    <div class="m-5"></div>
 
-                <div class="m-5"></div>
-
-                <!-- JSON -->
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8">
-                        <pre id="generated-json" class="code-block"></pre>
-                        <div class="mt-5 text-center">
-                            <button class="btn btn-outline-dark" onclick="copyJsonToClipboard()">
-                                クリップボードにコピー
-                            </button>
-                        </div>                        
+                    <!-- JSON -->
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <pre id="generated-json" class="code-block"></pre>
+                            <div class="mt-5 text-center">
+                                <input class="btn btn-outline-dark" type="submit" onclick="copyJsonToClipboard()" value="クリップボードにコピー">
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
                     </div>
-                    <div class="col-lg-2"></div>
-                </div>
+                </form>
             </div>
-
             <div class="col-xl-2"></div>
         </div>
 
