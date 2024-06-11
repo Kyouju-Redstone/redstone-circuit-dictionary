@@ -54,7 +54,11 @@
                     <!-- かな -->
                     <div class="mb-3">
                         <label class="required-label h5 form-label">かな</label>
-                        <input id="input-kana" class="form-control" placeholder="例: update suppressor" required>
+                        <input id="input-kana" class="form-control mb-1" placeholder="例: update suppressor" required>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="input-check-lower-case">
+                            <label class="form-check-label" for="input-check-lower-case"> 「用語」の英語を小文字にして自動生成</label>
+                        </div>
                         <div class="form-text">
                             ※日本語の場合はひらがな、英語の場合は全て小文字で入力
                         </div>
