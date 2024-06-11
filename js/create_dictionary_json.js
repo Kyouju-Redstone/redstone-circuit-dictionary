@@ -17,6 +17,7 @@ let categories = Object.freeze({
 
 let inputWordElement = document.getElementById("input-word");
 let inputKanaElement = document.getElementById("input-kana");
+let inputCheckLowerCaseElement = document.getElementById("input-check-lower-case");
 let inputDescriptionElement = document.getElementById("input-description");
 let inputCheckJeElement = document.getElementById("input-check-je");
 let inputCheckBeElement = document.getElementById("input-check-be");
@@ -31,20 +32,34 @@ let codeElement = document.createElement("code");
 let codeBlockElement = document.getElementById("generated-json");
 codeBlockElement.append(codeElement);
 
+let isLowerCase = false;
+
 setJsonToElement();
 
 // 用語の自動生成
 inputWordElement.addEventListener("input", (event) => {
     let word = event.currentTarget.value;
     json.word = word;
+    if (isLowerCase) {
+        json.kana = word.toLowerCase();
+        inputKanaElement.value = json.kana;
+    }
     setJsonToElement();
 });
 
 // かなの自動生成
 inputKanaElement.addEventListener("input", (event) => {
     let kana = event.currentTarget.value;
-    json.kana = kana;
+    json.kana = isLowerCase ? kana.toLowerCase() : kana;
     setJsonToElement();
+});
+
+inputCheckLowerCaseElement.addEventListener("change", (event) => {
+    isLowerCase = event.currentTarget.checked;
+    inputKanaElement.readOnly = isLowerCase;
+    if (isLowerCase) {
+        inputKanaElement.value = json.word.toLowerCase();
+    }
 });
 
 // 説明の自動生成
