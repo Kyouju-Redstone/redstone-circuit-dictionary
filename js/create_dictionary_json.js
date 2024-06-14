@@ -168,5 +168,18 @@ function setCategoryJson(category, isChecked) {
 
 function copyJsonToClipboard() {
     navigator.clipboard.writeText(codeElement.textContent);
-    alert("コピーしました。");
+}
+
+function resetJson() {
+    let isDeleting = confirm("本当にリセットしますか？\n※元に戻すことはできません。");
+    if (isDeleting) {
+        document.jsonForm.reset();
+        let resetJson = {
+            "word": "",
+            "kana": "",
+            "description": "",
+            "categories": []
+        };
+        codeElement.innerHTML = JSON.stringify(resetJson, null, "\t");
+    }
 }

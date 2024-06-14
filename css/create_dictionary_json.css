@@ -14,3 +14,7 @@
     background-color: rgb(255, 64, 64);
     border-radius: 5px;
 }
+
+#input-description {
+    height: 5.5em;
+}
