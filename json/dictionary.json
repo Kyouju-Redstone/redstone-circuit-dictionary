@@ -14,12 +14,34 @@
         {
             "word": "Flush Door",
             "kana": "flush door",
-            "description": "ドア部分が壁と一体になっているドア",
+            "description": "閉まったときにドア部分が壁と一体になっているドア",
             "categories": [
                 "piston"
             ],
             "videos": [
                 "https://youtu.be/AXsIvgKxUt4?si=j-UzFI4OU16dxEJG"
+            ]
+        },
+        {
+            "word": "Cave Door",
+            "kana": "cave door",
+            "description": "閉まったときに洞窟の壁のようになるドア",
+            "categories": [
+                "piston"
+            ],
+            "videos": [
+                "https://youtu.be/assGAC0kgtw?si=vYuyWYJJKaHD5jMB"
+            ]
+        },
+        {
+            "word": "Asdjke Door",
+            "kana": "asdjke door",
+            "description": "Asdjke氏のロゴの形をしたドア",
+            "categories": [
+                "piston"
+            ],
+            "videos": [
+                "https://youtu.be/6bVndqSYUAk?si=zI0uXeBCeu7wQfuS"
             ]
         },
         {
