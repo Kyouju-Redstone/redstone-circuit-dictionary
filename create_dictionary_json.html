@@ -44,7 +44,7 @@
             <div class="col-xl-2"></div>
             <div class="col-xl-8">
                 <h2 class="text-center pb-5">Dictionary JSON作成</h2>
-                <form>
+                <form name="jsonForm">
                     <!-- 用語 -->
                     <div class="mb-3">
                         <label class="required-label h5 form-label">用語</label>
@@ -120,13 +120,26 @@
                     </div>
                     <div class="m-5"></div>
 
-                    <!-- JSON -->
                     <div class="row">
                         <div class="col-lg-2"></div>
                         <div class="col-lg-8">
+                            <!-- JSON -->
                             <pre id="generated-json" class="code-block"></pre>
-                            <div class="mt-5 text-center">
-                                <input class="btn btn-outline-dark" type="submit" onclick="copyJsonToClipboard()" value="クリップボードにコピー">
+
+                            <div class="row text-center mx-5 my-2">
+                                <div class="col-sm-1"></div>
+
+                                <!-- コピーボタン -->
+                                <input class="col-sm btn btn-outline-dark" type="submit" onclick="copyJsonToClipboard()"
+                                    value="クリップボードにコピー">
+
+                                <div class="col-sm-1 my-1"></div>
+
+                                <!-- リセットボタン -->
+                                <input class="col-sm btn btn-outline-dark" type="button" onclick="resetJson()"
+                                    value="リセット">
+
+                                <div class="col-sm-1"></div>
                             </div>
                         </div>
                         <div class="col-lg-2"></div>
