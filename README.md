@@ -7,6 +7,12 @@ Minecraftのレッドストーン回路用語を集めた場所です。回路�
 - [用語集](https://kyouju-redstone.github.io/redstone-circuit-dictionary/)
 - [Dictionary JSON作成](https://kyouju-redstone.github.io/redstone-circuit-dictionary/create_dictionary_json.html)
 
+## 追加する用語の内容について
+結論、レッドストーン回路に関係する用語であれば、なんでもありです！回路名から回路を組むうえで必要な知識まで、必要と思ったら是非追加してみてください。
+
+### 用語の説明について
+説明は特に文字数制限等は設けていません。文章は、なるべく初心者に分かりやすいように作成してください。
+
 ## 用語の追加方法
 ※用語の追加にはGithubのアカウントが必要になります。
 
