@@ -166,7 +166,7 @@ function setCategoryJson(category, isChecked) {
     }
 }
 
-function copyJsonToClipboard() {
+function copyJson() {
     navigator.clipboard.writeText(codeElement.textContent);
 }
 
